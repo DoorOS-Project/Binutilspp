@@ -15,7 +15,7 @@ ifeq ($(OS),Windows_NT)
 	SUFFIX := _win
 	LD_FLAGS_2 = -Wl,--out-implib,$(BIN_DIR)$(_BIN_NAME).lib
 else
-	BIN_NAME := $(BIN_NAME).so
+	BIN_NAME := lib$(BIN_NAME).so
 endif
 
 SRC_FILES := $(wildcard $(SRC_DIR)*.cpp)
