@@ -35,6 +35,9 @@ Binutils++ being a set of tools, it contains a lot of subprojects:
 To build Binutils++, you can run `make` in the root directory to build all tools, or in the directories of the tool you
 want to build.
 
+> [!WARNING]
+> Need to build `libas++` before `as++` and `libld++` before `ld++`. The root Makefile doesn't build the library before.
+
 ## License
 
 Binutils++ is licensed under the [GNU General Public License v2.0 only](https://www.gnu.org/licenses/gpl-2.0). 
